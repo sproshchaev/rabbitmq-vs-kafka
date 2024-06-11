@@ -17,6 +17,7 @@ repositories {
     mavenCentral()
 }
 
+/** Для Kafka в Spring отсутствует стартер, поэтому требуется использовать spring-boot-starter */
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.kafka:spring-kafka")
