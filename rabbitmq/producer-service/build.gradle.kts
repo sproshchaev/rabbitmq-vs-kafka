@@ -20,6 +20,7 @@ repositories {
 /** Для RabbitMQ в Spring есть стартер spring-boot-starter-amqp, поэтому spring-boot-starter можно исключить */
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-amqp")
+    implementation("javax.annotation:javax.annotation-api:1.3.2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.amqp:spring-rabbit-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
