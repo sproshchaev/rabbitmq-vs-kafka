@@ -28,3 +28,11 @@ rabbitmq-vs-kafka/
 ├── docker-compose.yaml
 └── README.md
 ```
+
+
+
+### References
+
+
+`1.` Apache Kafka и Spring Boot: лёгкая интеграция https://habr.com/ru/companies/slurm/articles/772818/  
+
