@@ -23,6 +23,6 @@ rabbitmq-vs-kafka/
 ├── settings.gradle.kts
 ├── gradlew
 ├── gradlew.bat
-├── docker-compose.yml
+├── docker-compose.yaml
 └── README.md
 ```
