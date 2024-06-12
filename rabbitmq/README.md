@@ -9,25 +9,6 @@ A repository with examples comparing RabbitMQ and Apache Kafka
 ### Project structure
 ```
 rabbitmq-vs-kafka/
-├── kafka/
-│   ├── consumer-service/
-│   │   ├── src/
-│   │   │   ├── main/
-│   │   │   │   ├── java/
-│   │   │   │   │   └── com.prosoft/
-│   │   │   │   │       └── KafkaConsumerApp
-│   │   │   │   └── resources/
-│   │   │   └── test/
-│   │   ├── build.gradle.kts
-│   │   └── README.md
-│   ├── producer-service/
-│   │   ├── src/
-│   │   │   ├── main/
-│   │   │   │   ├── java/
-│   │   │   │   └── resources/
-│   │   │   └── test/
-│   │   ├── build.gradle.kts
-│   │   └── README.md
 ├── rabbitmq/
 │   ├── consumer-service/
 │   │   ├── src/

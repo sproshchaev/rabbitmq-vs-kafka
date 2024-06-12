@@ -20,39 +20,14 @@ rabbitmq-vs-kafka/
 │   │   │   └── test/
 │   │   ├── build.gradle.kts
 │   │   └── README.md
-│   ├── producer-service/
-│   │   ├── src/
-│   │   │   ├── main/
-│   │   │   │   ├── java/
-│   │   │   │   └── resources/
-│   │   │   └── test/
-│   │   ├── build.gradle.kts
-│   │   └── README.md
-├── rabbitmq/
-│   ├── consumer-service/
-│   │   ├── src/
-│   │   │   ├── main/
-│   │   │   │   ├── java/
-│   │   │   │   │   └── com.prosoft/
-│   │   │   │   │       └── RabbitMqConsumerApp
-│   │   │   │   └── resources/
-│   │   │       └── application.properties
-│   │   └── test/
-│   │       └── java/
-│   │       └── resources/
-│   ├── producer-service/
-│   │   ├── src/
-│   │   │   ├── main/
-│   │   │   │   ├── java/
-│   │   │   │   │   └── com.prosoft/
-│   │   │   │   │       └── RabbitMqProducerApp
-│   │   │   │   └── resources/
-│   │   │       └── application.properties
-│   │   └── test/
-│   │       └── java/
-│   │       └── resources/
-│   ├── build.gradle.kts
-│   └── README.md
+│   └── producer-service/
+│       ├── src/
+│       │   ├── main/
+│       │   │   ├── java/
+│       │   │   └── resources/
+│       │   └── test/
+│       ├── build.gradle.kts
+│       └── README.md
 ├── gradle/
 ├── build.gradle.kts
 ├── settings.gradle.kts
