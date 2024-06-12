@@ -36,5 +36,3 @@ rabbitmq-vs-kafka/
 ### References
 
 
-`1.` Быстрый старт. SpringBoot + RabbitMQ https://habr.com/ru/articles/782234/  
-`2.` RabbitMQ + Spring boot + Docker. Отправляем и получаем сообщения через Producer и Consumer. Пошаговое руководство https://habr.com/ru/articles/703352/   
