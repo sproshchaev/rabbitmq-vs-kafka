@@ -88,10 +88,10 @@ Docker Hub: https://hub.docker.com/r/linuxforhealth/kafdrop
 
   
 4. [RabbitMQ](https://www.rabbitmq.com/)  
-Название образа: rabbitmq:3-management  
-Docker Hub: https://hub.docker.com/r/freezippo/rabbitmq-3-management  
-Описание: образ rabbitmq:3-management содержит в себе RabbitMQ вместе с его управляющим интерфейсом. 
-Версия 3-management обозначает, что этот образ включает в себя управляющий интерфейс, который доступен на порту 15672.  
+Название образа: rabbitmq:3.13.3-management (еще возможно: rabbitmq:management)   
+Docker Hub: https://hub.docker.com/_/rabbitmq  
+Описание: образ rabbitmq:management содержит в себе RabbitMQ вместе с его управляющим интерфейсом.  
+Версия management обозначает, что этот образ включает в себя управляющий интерфейс, который доступен на порту 15672.  
 
   
 ### Monitoring
