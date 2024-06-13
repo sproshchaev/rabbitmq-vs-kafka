@@ -10,11 +10,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class RabbitConf {
+public class RabbitMqConfig {
 
     public static final String EXCHANGE_NAME = "myExchange";
+
     public static final String ROUTING_KEY_QUEUE1 = "routingKeyQueue1";
     public static final String ROUTING_KEY_QUEUE2 = "routingKeyQueue2";
+
     public static final String QUEUE1 = "queue1";
     public static final String QUEUE2 = "queue2";
 

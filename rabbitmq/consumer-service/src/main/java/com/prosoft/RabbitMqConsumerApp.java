@@ -12,18 +12,40 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class RabbitMqConsumerApp {
 
+    public static final String QUEUE_1 = "queue1";
+    public static final String QUEUE_2 = "queue2";
+
     public static void main(String[] args) {
         SpringApplication.run(RabbitMqConsumerApp.class, args);
     }
 
-    @RabbitListener(queues = "queue1")
-    public void processMyQueueOne(String message) {
-        System.out.printf("queue1: received from myQueue : %s %n", new String(message.getBytes()));
+    /**
+     * Метод readMyQueueOne читает данные из очереди QUEUE_1
+     * @param message - строка, принятая из RabbitMQ
+     */
+    @RabbitListener(queues = QUEUE_1)
+    public void readMyQueueOne(String message) {
+        toConsole(QUEUE_1, new String(message.getBytes()));
     }
 
-    @RabbitListener(queues = "queue2")
-    public void processMyQueueTwo(String message) {
-        System.out.printf("queue2: received from myQueue : %s %n", new String(message.getBytes()));
+    /**
+     * Метод readMyQueueTwo читает данные из очереди QUEUE_2
+     * @param message - строка, принятая из RabbitMQ
+     */
+    @RabbitListener(queues = QUEUE_2)
+    public void readMyQueueTwo(String message) {
+        toConsole(QUEUE_2, new String(message.getBytes()));
+    }
+
+    /**
+     * Метод toConsole() выводит в консоль данные, которые были приняты из RabbitMQ.
+     *
+     * @param queues - имя очереди RabbitMQ
+     * @param ch - строка, принятая из RabbitMQ
+     */
+    private static synchronized void toConsole(String queues, String ch) {
+        String message = String.format("RabbitMQ: %s was received: %s", queues, ch);
+        System.out.println(message);
     }
 
 }
