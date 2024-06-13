@@ -100,5 +100,5 @@ Docker Hub: https://hub.docker.com/_/rabbitmq
 1. Веб-интерфейс для мониторинга и управления Apache Kafka (Kafdrop) http://localhost:9000/  
 
   
-2. Веб-интерфейс для управления и мониторинга RabbitMQ (Management Plugin) http://localhost:15672/ 
+2. Веб-интерфейс для управления и мониторинга RabbitMQ (RabbitMQ Management Plugin) http://localhost:15672/ 
   

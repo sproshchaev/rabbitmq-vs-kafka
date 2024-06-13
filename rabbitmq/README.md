@@ -43,10 +43,9 @@ rabbitmq-vs-kafka/
 └── README.md
 ```
 
-### Monitoring
-`1.` Веб-интерфейс для управления и мониторинга RabbitMQ (Management Plugin) http://localhost:15672/  
+### RabbitMQ Management Plugin
+`1.` Веб-интерфейс для управления и мониторинга (RabbitMQ Management Plugin) http://localhost:15672/  
 
-<img src="https://i.postimg.cc/3wNP1LsR/Rabbit-MQ-vs-Kafka.png" alt="Текст..."/> 
   
   
 ### References
@@ -54,3 +53,4 @@ rabbitmq-vs-kafka/
 
 `1.` Быстрый старт. SpringBoot + RabbitMQ https://habr.com/ru/articles/782234/  
 `2.` RabbitMQ + Spring boot + Docker. Отправляем и получаем сообщения через Producer и Consumer. Пошаговое руководство https://habr.com/ru/articles/703352/   
+`3.` Установка, настройка и использование RabbitMQ https://timeweb.cloud/tutorials/microservices/ustanovka-i-nastroika-rabbitmq  
