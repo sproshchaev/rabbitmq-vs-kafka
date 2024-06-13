@@ -49,7 +49,7 @@ rabbitmq-vs-kafka/
 <img src="https://i.postimg.cc/3wNP1LsR/Rabbit-MQ-vs-Kafka.png" alt="Текст..."/> 
 
 
-<img src="https://www.dropbox.com/scl/fi/vfhrlxp3v9e4w85rs75x6/RabbitMQ-vs-Kafka.png" alt="Текст..."/>
+<img src="https://private-user-images.githubusercontent.com/95690553/339277968-802634d6-7f31-45cd-a982-fc21f7f82248.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgyNjY3NTAsIm5iZiI6MTcxODI2NjQ1MCwicGF0aCI6Ii85NTY5MDU1My8zMzkyNzc5NjgtODAyNjM0ZDYtN2YzMS00NWNkLWE5ODItZmMyMWY3ZjgyMjQ4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjEzVDA4MTQxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzYjMwNTNhODlkNWM2MTk0ZTlkZWYyNTk5NDhkMmRiNTVlMzYzNzViYjE2ZWMwNTRhODZjOTgxMTIzZTc2ZmYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.UZtmUY9iPkBaqNBpoCE9pkGrCOaz2SKIyyEc5RS45vs" alt="Текст..."/>
 
 ### References
 
