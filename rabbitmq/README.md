@@ -43,6 +43,14 @@ rabbitmq-vs-kafka/
 └── README.md
 ```
 
+### Monitoring
+`1.` Веб-интерфейс для управления и мониторинга RabbitMQ (Management Plugin) http://localhost:15672/  
+
+<img src="https://i.postimg.cc/3wNP1LsR/Rabbit-MQ-vs-Kafka.png" alt="Текст..."/> 
+
+
+<img src="https://www.dropbox.com/scl/fi/vfhrlxp3v9e4w85rs75x6/RabbitMQ-vs-Kafka.png" alt="Текст..."/>
+
 ### References
 
 
