@@ -12,13 +12,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class RabbitMqProducerApp implements CommandLineRunner {
 
-    public static final String EXCHANGE_NAME = "myExchange";
+    private static final String EXCHANGE_NAME = "myExchange";
 
-    public static final String ROUTING_KEY_QUEUE_1 = "routingKeyQueue1";
-    public static final String ROUTING_KEY_QUEUE_2 = "routingKeyQueue2";
+    private static final String ROUTING_KEY_QUEUE_1 = "routingKeyQueue1";
+    private static final String ROUTING_KEY_QUEUE_2 = "routingKeyQueue2";
 
-    public static final String ENGLISH_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    public static final String VOWELS = "AEIOU";
+    private static final String ENGLISH_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static final String VOWELS = "AEIOU";
 
     /**
      * Класс в Spring для взаимодействия с брокером сообщений RabbitMQ, предоставляющий методы отправки и получения

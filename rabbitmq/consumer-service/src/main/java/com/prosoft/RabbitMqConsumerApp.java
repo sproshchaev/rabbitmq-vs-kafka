@@ -1,5 +1,6 @@
 package com.prosoft;
 
+import com.prosoft.config.RabbitMqConfig;
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.boot.SpringApplication;
@@ -12,9 +13,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class RabbitMqConsumerApp {
 
-    public static final String QUEUE_1 = "queue1";
-    public static final String QUEUE_2 = "queue2";
-
     public static void main(String[] args) {
         SpringApplication.run(RabbitMqConsumerApp.class, args);
     }
@@ -23,18 +21,18 @@ public class RabbitMqConsumerApp {
      * Метод readMyQueueOne читает данные из очереди QUEUE_1
      * @param message - строка, принятая из RabbitMQ
      */
-    @RabbitListener(queues = QUEUE_1)
+    @RabbitListener(queues = RabbitMqConfig.QUEUE1)
     public void readMyQueueOne(String message) {
-        toConsole(QUEUE_1, new String(message.getBytes()));
+        toConsole(RabbitMqConfig.QUEUE1, new String(message.getBytes()));
     }
 
     /**
      * Метод readMyQueueTwo читает данные из очереди QUEUE_2
      * @param message - строка, принятая из RabbitMQ
      */
-    @RabbitListener(queues = QUEUE_2)
+    @RabbitListener(queues = RabbitMqConfig.QUEUE2)
     public void readMyQueueTwo(String message) {
-        toConsole(QUEUE_2, new String(message.getBytes()));
+        toConsole(RabbitMqConfig.QUEUE2, new String(message.getBytes()));
     }
 
     /**

@@ -12,14 +12,14 @@ import org.springframework.kafka.core.KafkaTemplate;
 @SpringBootApplication
 public class KafkaProducerApp implements CommandLineRunner {
 
-    public static final String VOWELS_LETTERS_TOPIC = "vowels-letters";
-    public static final String CONSONANT_LETTERS_TOPIC = "consonant-letters";
+    private static final String VOWELS_LETTERS_TOPIC = "vowels-letters";
+    private static final String CONSONANT_LETTERS_TOPIC = "consonant-letters";
 
-    public static final String VOWELS_KEY = "vowels";
-    public static final String CONSONANTS_KEY = "consonants";
+    private static final String VOWELS_KEY = "vowels";
+    private static final String CONSONANTS_KEY = "consonants";
 
-    public static final String ENGLISH_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    public static final String VOWELS = "AEIOU";
+    private static final String ENGLISH_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static final String VOWELS = "AEIOU";
 
     /**
      * Внедрение KafkaTemplate - компонент в Spring для упрощенной работы с Kafka, обеспечивающий удобный способ

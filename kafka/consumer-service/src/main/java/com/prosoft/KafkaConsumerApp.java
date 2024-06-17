@@ -15,13 +15,13 @@ import org.springframework.kafka.listener.ConsumerSeekAware;
 @SpringBootApplication
 public class KafkaConsumerApp implements ConsumerSeekAware {
 
-    public static final String CONSUMER_GROUP_ID = "my-consumer-group";
+    private static final String CONSUMER_GROUP_ID = "my-consumer-group";
 
-    public static final String VOWELS_LETTERS_TOPIC = "vowels-letters";
-    public static final String CONSONANT_LETTERS_TOPIC = "consonant-letters";
+    private static final String VOWELS_LETTERS_TOPIC = "vowels-letters";
+    private static final String CONSONANT_LETTERS_TOPIC = "consonant-letters";
 
-    public static final String PARTITION = "0";
-    public static final String INITIAL_OFFSET = "0";
+    private static final String PARTITION = "0";
+    private static final String INITIAL_OFFSET = "0";
 
     public static void main(String[] args) {
         SpringApplication.run(KafkaConsumerApp.class, args);

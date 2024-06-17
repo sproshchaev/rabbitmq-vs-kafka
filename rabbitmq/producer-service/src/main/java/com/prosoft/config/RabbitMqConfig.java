@@ -12,13 +12,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMqConfig {
 
-    public static final String EXCHANGE_NAME = "myExchange";
+    private static final String QUEUE1 = "queue1";
+    private static final String QUEUE2 = "queue2";
 
-    public static final String ROUTING_KEY_QUEUE1 = "routingKeyQueue1";
-    public static final String ROUTING_KEY_QUEUE2 = "routingKeyQueue2";
+    private static final String EXCHANGE_NAME = "myExchange";
 
-    public static final String QUEUE1 = "queue1";
-    public static final String QUEUE2 = "queue2";
+    private static final String ROUTING_KEY_QUEUE1 = "routingKeyQueue1";
+    private static final String ROUTING_KEY_QUEUE2 = "routingKeyQueue2";
 
     @Value("${spring.rabbitmq.username}")
     private String rabbitUsername;
