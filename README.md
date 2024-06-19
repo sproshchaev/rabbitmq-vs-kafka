@@ -68,30 +68,33 @@ rabbitmq-vs-kafka/
 
 
 1. [Zookeeper](https://zookeeper.apache.org/)  
-Название образа: confluentinc/cp-zookeeper:7.6.0  
-Docker Hub: https://hub.docker.com/r/confluentinc/cp-zookeeper  
-Описание: образ Docker, содержащий Apache Zookeeper, который поставляется вместе с платформой Confluent для работы с Apache Kafka. 
-Версия образа 7.6.0 соответствует версии Confluent Platform, которая включает в себя Apache Zookeeper версии 3.6.2.  
-
+   Docker image: confluentinc/cp-zookeeper:7.6.1  
+   Last pushed: 11.04.2024  
+   Docker Hub: https://hub.docker.com/r/confluentinc/cp-zookeeper  
+   Info: образ Docker, содержащий Apache Zookeeper, который поставляется вместе с платформой Confluent для работы с Apache Kafka.
+  
   
 2. [Kafka](https://kafka.apache.org/)  
-Название образа: confluentinc/cp-kafka:7.6.0  
-Docker Hub: https://hub.docker.com/r/confluentinc/cp-kafka  
-Описание: контейнер Docker, содержащий Apache Kafka, от компании Confluent. Версия образа 7.6.0 соответствует версии 
+   Docker image: confluentinc/cp-kafka:7.6.1
+   Last pushed: 11.04.2024
+   Docker Hub: https://hub.docker.com/r/confluentinc/cp-kafka  
+   Info: контейнер Docker, содержащий Apache Kafka, от компании Confluent. Версия образа 7.6.1 соответствует версии 
 Apache Kafka, которая включена в этот образ.  
 
 
 3. [Kafdrop](https://github.com/obsidiandynamics/kafdrop)  
-Название образа: linuxforhealth/kafdrop:latest
-Docker Hub: https://hub.docker.com/r/linuxforhealth/kafdrop  
-Описание: веб-интерфейс для управления и мониторинга Apache Kafka, который позволяет взаимодействовать с кластером Kafka.  
+   Docker image: linuxforhealth/kafdrop:4.0.1
+   Last pushed: 02.11.2023
+   Docker Hub: https://hub.docker.com/r/linuxforhealth/kafdrop  
+   Info: веб-интерфейс для управления и мониторинга Apache Kafka, который позволяет взаимодействовать с кластером Kafka.  
 
   
 4. [RabbitMQ](https://www.rabbitmq.com/)  
-Название образа: rabbitmq:3.13.3-management (еще возможно: rabbitmq:management)   
-Docker Hub: https://hub.docker.com/_/rabbitmq  
-Описание: образ rabbitmq:management содержит в себе RabbitMQ вместе с его управляющим интерфейсом.  
-Версия management обозначает, что этот образ включает в себя управляющий интерфейс, который доступен на порту 15672.  
+   Docker image: rabbitmq:3.13.3-management (еще возможно: rabbitmq:management)   
+   Last pushed: 06.06.2024
+   Docker Hub: https://hub.docker.com/_/rabbitmq  
+   Info: образ rabbitmq:management содержит в себе RabbitMQ вместе с его управляющим интерфейсом. Версия management 
+   обозначает, что этот образ включает в себя управляющий интерфейс, который доступен на порту 15672.  
 
   
 ### Monitoring

@@ -18,7 +18,7 @@ public class KafkaConsumerApp implements ConsumerSeekAware {
     private static final String CONSUMER_GROUP_ID = "my-consumer-group";
 
     private static final String VOWELS_LETTERS_TOPIC = "vowels-letters";
-    private static final String CONSONANT_LETTERS_TOPIC = "consonant-letters";
+    private static final String CONSONANT_LETTERS_TOPIC = "topic1"; //"consonant-letters";
 
     private static final String PARTITION = "0";
     private static final String INITIAL_OFFSET = "0";
