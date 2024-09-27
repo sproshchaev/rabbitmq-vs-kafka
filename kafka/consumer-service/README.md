@@ -4,7 +4,7 @@
 [![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FFFFFF??style=for-the-badge&logo=rabbitmq)](https://www.rabbitmq.com/)
 [![Docker](https://img.shields.io/badge/Docker-0E2B62??style=for-the-badge&logo=Docker&logoColor=FFFFFF)](https://www.docker.com/)
 # rabbitmq-vs-kafka
-A repository with examples comparing RabbitMQ and Apache Kafka
+A repository with examples comparing RabbitMQ and Apache Kafka  
 
 ### Project structure
 ```
