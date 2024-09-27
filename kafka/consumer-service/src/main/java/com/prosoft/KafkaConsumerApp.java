@@ -18,7 +18,7 @@ public class KafkaConsumerApp implements ConsumerSeekAware {
     private static final String CONSUMER_GROUP_ID = "my-consumer-group";
 
     private static final String VOWELS_LETTERS_TOPIC = "vowels-letters";
-    private static final String CONSONANT_LETTERS_TOPIC = "topic1"; //"consonant-letters";
+    private static final String CONSONANT_LETTERS_TOPIC = "topic1";
 
     private static final String PARTITION = "0";
     private static final String INITIAL_OFFSET = "0";
@@ -30,8 +30,8 @@ public class KafkaConsumerApp implements ConsumerSeekAware {
     /***
      * Метод consonantLettersListener() читает данные из топика CONSONANT_LETTERS_TOPIC (согласные буквы)
      * и партиции PARTITION с указанием оффсета INITIAL_OFFSET и выводит в консоль.
-     * Для кансамера указан CONSUMER_GROUP_ID.
-     * @param data - строка, прочтанная из топика
+     * Для консьюмера указан CONSUMER_GROUP_ID.
+     * @param data - строка, прочтённая из топика
      */
     @KafkaListener(groupId = CONSUMER_GROUP_ID, topicPartitions = @TopicPartition(
                    topic = CONSONANT_LETTERS_TOPIC, partitionOffsets = {@PartitionOffset(
@@ -44,8 +44,8 @@ public class KafkaConsumerApp implements ConsumerSeekAware {
     /***
      * Метод vowelsLettersListener() читает данные из топика VOWELS_LETTERS_TOPIC (гласные буквы)
      * и партиции PARTITION с указанием оффсета INITIAL_OFFSET и выводит в консоль.
-     * Для кансамера указан CONSUMER_GROUP_ID.
-     * @param data - строка, прочтанная из топика
+     * Для консьюмера указан CONSUMER_GROUP_ID.
+     * @param data - строка, прочтённая из топика
      */
     @KafkaListener(groupId = CONSUMER_GROUP_ID, topicPartitions = @TopicPartition(
                    topic = VOWELS_LETTERS_TOPIC, partitionOffsets = {@PartitionOffset(
