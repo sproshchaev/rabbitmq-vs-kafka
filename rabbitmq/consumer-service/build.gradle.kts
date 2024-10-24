@@ -20,6 +20,8 @@ repositories {
 /** Для RabbitMQ в Spring есть стартер spring-boot-starter-amqp, поэтому spring-boot-starter можно исключить */
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-amqp")
+    implementation("org.apache.logging.log4j:log4j-api:2.24.0")
+    implementation("org.apache.logging.log4j:log4j-core:2.24.0")
 }
 
 tasks.test {

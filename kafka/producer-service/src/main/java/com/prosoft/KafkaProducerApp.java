@@ -1,5 +1,7 @@
 package com.prosoft;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -11,6 +13,8 @@ import org.springframework.kafka.core.KafkaTemplate;
  */
 @SpringBootApplication
 public class KafkaProducerApp implements CommandLineRunner {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(KafkaProducerApp.class);
 
     private static final String VOWELS_LETTERS_TOPIC = "vowels-letters";
     private static final String CONSONANT_LETTERS_TOPIC = "consonant-letters";
@@ -58,7 +62,8 @@ public class KafkaProducerApp implements CommandLineRunner {
      */
     private static synchronized void toConsole(String topic, String key, char ch) {
         String message = String.format("Kafka: to topic \"%s\" with key \"%s\" sent: %c", topic, key, ch);
-        System.out.println(message);
+        //System.out.println(message);
+        LOGGER.info(message);
     }
 
 }

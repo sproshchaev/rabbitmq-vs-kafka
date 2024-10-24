@@ -1,6 +1,8 @@
 package com.prosoft;
 
 import com.prosoft.config.RabbitMqConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.boot.SpringApplication;
@@ -13,12 +15,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class RabbitMqConsumerApp {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(RabbitMqConsumerApp.class);
+
     public static void main(String[] args) {
         SpringApplication.run(RabbitMqConsumerApp.class, args);
     }
 
     /**
      * Метод readMyQueueOne читает данные из очереди QUEUE_1
+     *
      * @param message - строка, принятая из RabbitMQ
      */
     @RabbitListener(queues = RabbitMqConfig.QUEUE1)
@@ -28,6 +33,7 @@ public class RabbitMqConsumerApp {
 
     /**
      * Метод readMyQueueTwo читает данные из очереди QUEUE_2
+     *
      * @param message - строка, принятая из RabbitMQ
      */
     @RabbitListener(queues = RabbitMqConfig.QUEUE2)
@@ -39,11 +45,12 @@ public class RabbitMqConsumerApp {
      * Метод toConsole() выводит в консоль данные, которые были приняты из RabbitMQ.
      *
      * @param queues - имя очереди RabbitMQ
-     * @param ch - строка, принятая из RabbitMQ
+     * @param ch     - строка, принятая из RabbitMQ
      */
     private static synchronized void toConsole(String queues, String ch) {
         String message = String.format("RabbitMQ: %s was received: %s", queues, ch);
-        System.out.println(message);
+        //System.out.println(message);
+        LOGGER.info(message);
     }
 
 }

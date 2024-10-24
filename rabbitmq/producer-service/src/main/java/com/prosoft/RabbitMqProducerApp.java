@@ -1,5 +1,7 @@
 package com.prosoft;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -11,6 +13,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class RabbitMqProducerApp implements CommandLineRunner {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(RabbitMqProducerApp.class);
 
     private static final String EXCHANGE_NAME = "myExchange";
 
@@ -70,7 +74,8 @@ public class RabbitMqProducerApp implements CommandLineRunner {
      */
     private static void toConsole(String routingKey, char ch) {
         String message = String.format("RabbitMQ: to exchange \"%s\" with key \"%s\" sent: %c", EXCHANGE_NAME, routingKey, ch);
-        System.out.println(message);
+        // System.out.println(message);
+        LOGGER.info(message);
     }
 
 }

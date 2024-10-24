@@ -21,6 +21,8 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.kafka:spring-kafka")
+    implementation("org.apache.logging.log4j:log4j-api:2.24.0")
+    implementation("org.apache.logging.log4j:log4j-core:2.24.0")
 }
 
 tasks.test {

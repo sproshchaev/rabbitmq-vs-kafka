@@ -1,5 +1,7 @@
 package com.prosoft;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.kafka.annotation.EnableKafka;
@@ -14,6 +16,8 @@ import org.springframework.kafka.listener.ConsumerSeekAware;
 @EnableKafka
 @SpringBootApplication
 public class KafkaConsumerApp implements ConsumerSeekAware {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumerApp.class);
 
     private static final String CONSUMER_GROUP_ID = "my-consumer-group";
 
@@ -34,9 +38,9 @@ public class KafkaConsumerApp implements ConsumerSeekAware {
      * @param data - строка, прочтённая из сообщения
      */
     @KafkaListener(groupId = CONSUMER_GROUP_ID, topicPartitions = @TopicPartition(
-                   topic = CONSONANT_LETTERS_TOPIC, partitionOffsets = {@PartitionOffset(
-                   partition = PARTITION,
-                   initialOffset = INITIAL_OFFSET)}))
+            topic = CONSONANT_LETTERS_TOPIC, partitionOffsets = {@PartitionOffset(
+            partition = PARTITION,
+            initialOffset = INITIAL_OFFSET)}))
     void consonantLettersListener(String data) {
         toConsole(CONSONANT_LETTERS_TOPIC, data);
     }
@@ -48,9 +52,9 @@ public class KafkaConsumerApp implements ConsumerSeekAware {
      * @param data - строка, прочтённая из сообщения
      */
     @KafkaListener(groupId = CONSUMER_GROUP_ID, topicPartitions = @TopicPartition(
-                   topic = VOWELS_LETTERS_TOPIC, partitionOffsets = {@PartitionOffset(
-                   partition = PARTITION,
-                   initialOffset = INITIAL_OFFSET)}))
+            topic = VOWELS_LETTERS_TOPIC, partitionOffsets = {@PartitionOffset(
+            partition = PARTITION,
+            initialOffset = INITIAL_OFFSET)}))
     void vowelsLettersListener(String data) {
         toConsole(VOWELS_LETTERS_TOPIC, data);
     }
@@ -59,11 +63,12 @@ public class KafkaConsumerApp implements ConsumerSeekAware {
      * Метод toConsole() выводит в консоль данные, которые были приняты из Kafka.
      *
      * @param topic - топик в Kafka
-     * @param ch - строка, принятая из Kafka
+     * @param ch    - строка, принятая из Kafka
      */
     private static synchronized void toConsole(String topic, String ch) {
         String message = String.format("Kafka: from topic \"%s\" was received: %s", topic, ch);
-        System.out.println(message);
+        //System.out.println(message);
+        LOGGER.info(message);
     }
 
 }
