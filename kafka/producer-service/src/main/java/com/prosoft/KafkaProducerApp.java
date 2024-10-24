@@ -33,7 +33,7 @@ public class KafkaProducerApp implements CommandLineRunner {
     }
 
     /**
-     * Метод run отправляет сообщения в топик с указанием ключа
+     * Метод run отправляет сообщения VOWELS_LETTERS_TOPIC и CONSONANT_LETTERS_TOPIC с указанием ключа
      * @param args - аргументы строки вызова
      */
     @Override
