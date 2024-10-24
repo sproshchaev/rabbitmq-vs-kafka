@@ -74,7 +74,6 @@ public class RabbitMqProducerApp implements CommandLineRunner {
      */
     private static void toConsole(String routingKey, char ch) {
         String message = String.format("RabbitMQ: to exchange \"%s\" with key \"%s\" sent: %c", EXCHANGE_NAME, routingKey, ch);
-        // System.out.println(message);
         LOGGER.info(message);
     }
 

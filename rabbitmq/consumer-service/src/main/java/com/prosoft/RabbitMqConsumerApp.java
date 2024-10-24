@@ -49,7 +49,6 @@ public class RabbitMqConsumerApp {
      */
     private static synchronized void toConsole(String queues, String ch) {
         String message = String.format("RabbitMQ: %s was received: %s", queues, ch);
-        //System.out.println(message);
         LOGGER.info(message);
     }
 

@@ -67,7 +67,6 @@ public class KafkaConsumerApp implements ConsumerSeekAware {
      */
     private static synchronized void toConsole(String topic, String ch) {
         String message = String.format("Kafka: from topic \"%s\" was received: %s", topic, ch);
-        //System.out.println(message);
         LOGGER.info(message);
     }
 

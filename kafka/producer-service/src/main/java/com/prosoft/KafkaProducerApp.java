@@ -62,7 +62,6 @@ public class KafkaProducerApp implements CommandLineRunner {
      */
     private static synchronized void toConsole(String topic, String key, char ch) {
         String message = String.format("Kafka: to topic \"%s\" with key \"%s\" sent: %c", topic, key, ch);
-        //System.out.println(message);
         LOGGER.info(message);
     }
 
