@@ -1,3 +1,5 @@
+`Kafka CLI`
+
 `1.` Запуск контейнеров Docker:
 ```shell
 docker compose up -d
